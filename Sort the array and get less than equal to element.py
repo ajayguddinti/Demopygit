@@ -37,6 +37,18 @@ result = count_elements_less_than_or_equal_to(arr, x)
 print(result)
 
 
+### Different solution using bisect module
 
+from bisect import  bisect_right
 
+def count_elements_less_than_or_equal_to_1(arr1, x1):
+      return bisect_right(arr1, x1)
+
+arr1 = [1, 2, 2, 2, 5, 7, 9]
+
+x1 = 6
+
+get_result = count_elements_less_than_or_equal_to_1(arr1, x1)
+
+print(get_result)
 
